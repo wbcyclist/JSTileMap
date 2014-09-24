@@ -19,10 +19,6 @@
 		3F0F81B41768146E006F5FB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81B31768146E006F5FB9 /* ViewController.m */; };
 		3F0F81B71768146E006F5FB9 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81B61768146E006F5FB9 /* MyScene.m */; };
 		3F0F81BB1768146E006F5FB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81BA1768146E006F5FB9 /* Images.xcassets */; };
-		3F0F81C21768146E006F5FB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81C11768146E006F5FB9 /* XCTest.framework */; };
-		3F0F81C31768146E006F5FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81981768146E006F5FB9 /* Foundation.framework */; };
-		3F0F81C41768146E006F5FB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F819C1768146E006F5FB9 /* UIKit.framework */; };
-		3F0F81CC1768146E006F5FB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81CA1768146E006F5FB9 /* InfoPlist.strings */; };
 		3F0F81CE1768146E006F5FB9 /* TMXMapSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81CD1768146E006F5FB9 /* TMXMapSampleTests.m */; };
 		3F0F81DD17681C93006F5FB9 /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81DB17681C93006F5FB9 /* LFCGzipUtility.m */; };
 		3F0F81E317681E36006F5FB9 /* cobbleset-64_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0F81E117681E36006F5FB9 /* cobbleset-64_0.png */; };
@@ -65,11 +61,7 @@
 		3F9562AE18F3C87000E9DA8C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F9562AD18F3C87000E9DA8C /* MainMenu.xib */; };
 		3F9562B318F3C87000E9DA8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9562B218F3C87000E9DA8C /* AppDelegate.m */; };
 		3F9562B818F3C87000E9DA8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9562B718F3C87000E9DA8C /* Images.xcassets */; };
-		3F9562BE18F3C87000E9DA8C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81C11768146E006F5FB9 /* XCTest.framework */; };
-		3F9562BF18F3C87000E9DA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F95629A18F3C87000E9DA8C /* Cocoa.framework */; };
-		3F9562C718F3C87100E9DA8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9562C518F3C87000E9DA8C /* InfoPlist.strings */; };
 		3F9562C918F3C87100E9DA8C /* TMXMapSampleMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9562C818F3C87100E9DA8C /* TMXMapSampleMacTests.m */; };
-		3F9562D118F3C8D500E9DA8C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9562D018F3C8D500E9DA8C /* Cocoa.framework */; };
 		3F9562D218F3C96B00E9DA8C /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81E017681D0E006F5FB9 /* JSTileMap.m */; };
 		3F9562D318F3C97000E9DA8C /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81DB17681C93006F5FB9 /* LFCGzipUtility.m */; };
 		3F9562D418F3C97D00E9DA8C /* black-spade-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB13A3317BC668A007D9DB9 /* black-spade-md.png */; };
@@ -97,13 +89,17 @@
 		3F9562EA18F3C9C900E9DA8C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB94A317871E2300230D5C /* LICENSE.txt */; };
 		3F9562EB18F3C9CA00E9DA8C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB94A317871E2300230D5C /* LICENSE.txt */; };
 		3F9562ED18F3CA8400E9DA8C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0F81B61768146E006F5FB9 /* MyScene.m */; };
-		3F9562EF18F3CADE00E9DA8C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9562EE18F3CADE00E9DA8C /* libz.dylib */; };
 		3FB13A3417BC668A007D9DB9 /* black-spade-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FB13A3317BC668A007D9DB9 /* black-spade-md.png */; };
 		3FDB949F178710C700230D5C /* iso-test-1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB949D178710C700230D5C /* iso-test-1.tmx */; };
 		3FDB94A0178710C700230D5C /* iso-64x64-outside.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB949E178710C700230D5C /* iso-64x64-outside.png */; };
 		3FDB94A21787139700230D5C /* iso-test-2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB94A11787133A00230D5C /* iso-test-2.tmx */; };
 		3FDB94A5178FA4AE00230D5C /* scary_morguefile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FDB94A4178FA4AE00230D5C /* scary_morguefile.jpg */; };
 		95F55C5017716A0500828C7A /* multi-tileset.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 95F55C4F17716A0500828C7A /* multi-tileset.tmx */; };
+		A59D447219D2DE1500F5840E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81E517681F28006F5FB9 /* libz.dylib */; };
+		A59D447319D2DEE300F5840E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F819A1768146E006F5FB9 /* CoreGraphics.framework */; };
+		A59D447419D2DF4A00F5840E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0F81981768146E006F5FB9 /* Foundation.framework */; };
+		A59D447A19D2E09C00F5840E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59D447919D2E09C00F5840E /* AppKit.framework */; };
+		A59D447C19D2E0A500F5840E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59D447B19D2E0A500F5840E /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +139,6 @@
 		3F0F81B61768146E006F5FB9 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		3F0F81BA1768146E006F5FB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F0F81C01768146E006F5FB9 /* TMXMapSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMXMapSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F0F81C11768146E006F5FB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3F0F81C91768146E006F5FB9 /* TMXMapSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMXMapSampleTests-Info.plist"; sourceTree = "<group>"; };
 		3F0F81CB1768146E006F5FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F0F81CD1768146E006F5FB9 /* TMXMapSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMXMapSampleTests.m; sourceTree = "<group>"; };
@@ -178,10 +173,6 @@
 		3F8BCB8F177025AA00E3A62C /* a_sampleLayers.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = a_sampleLayers.tmx; sourceTree = "<group>"; };
 		3F8BCB91177025CC00E3A62C /* XMLSampleLayers.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = XMLSampleLayers.tmx; sourceTree = "<group>"; };
 		3F95629918F3C87000E9DA8C /* TMXMapSampleMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMXMapSampleMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F95629A18F3C87000E9DA8C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		3F95629E18F3C87000E9DA8C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		3F95629F18F3C87000E9DA8C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3F9562A018F3C87000E9DA8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F9562A318F3C87000E9DA8C /* TMXMapSampleMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMXMapSampleMac-Info.plist"; sourceTree = "<group>"; };
 		3F9562A518F3C87000E9DA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F9562A718F3C87000E9DA8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,8 +186,6 @@
 		3F9562C418F3C87000E9DA8C /* TMXMapSampleMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TMXMapSampleMacTests-Info.plist"; sourceTree = "<group>"; };
 		3F9562C618F3C87100E9DA8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F9562C818F3C87100E9DA8C /* TMXMapSampleMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMXMapSampleMacTests.m; sourceTree = "<group>"; };
-		3F9562D018F3C8D500E9DA8C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		3F9562EE18F3CADE00E9DA8C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		3FB13A3317BC668A007D9DB9 /* black-spade-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-spade-md.png"; sourceTree = "<group>"; };
 		3FDB949D178710C700230D5C /* iso-test-1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iso-test-1.tmx"; sourceTree = "<group>"; };
 		3FDB949E178710C700230D5C /* iso-64x64-outside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iso-64x64-outside.png"; sourceTree = "<group>"; };
@@ -204,6 +193,8 @@
 		3FDB94A317871E2300230D5C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		3FDB94A4178FA4AE00230D5C /* scary_morguefile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scary_morguefile.jpg; sourceTree = "<group>"; };
 		95F55C4F17716A0500828C7A /* multi-tileset.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "multi-tileset.tmx"; sourceTree = "<group>"; };
+		A59D447919D2E09C00F5840E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		A59D447B19D2E0A500F5840E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,11 +202,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0F81991768146E006F5FB9 /* Foundation.framework in Frameworks */,
 				3F0F81E617681F28006F5FB9 /* libz.dylib in Frameworks */,
 				3F0F819B1768146E006F5FB9 /* CoreGraphics.framework in Frameworks */,
 				3F0F819D1768146E006F5FB9 /* UIKit.framework in Frameworks */,
 				3F0F819F1768146E006F5FB9 /* SpriteKit.framework in Frameworks */,
-				3F0F81991768146E006F5FB9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +214,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0F81C21768146E006F5FB9 /* XCTest.framework in Frameworks */,
-				3F0F81C41768146E006F5FB9 /* UIKit.framework in Frameworks */,
-				3F0F81C31768146E006F5FB9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,9 +221,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9562EF18F3CADE00E9DA8C /* libz.dylib in Frameworks */,
-				3F9562D118F3C8D500E9DA8C /* Cocoa.framework in Frameworks */,
+				A59D447C19D2E0A500F5840E /* Cocoa.framework in Frameworks */,
+				A59D447A19D2E09C00F5840E /* AppKit.framework in Frameworks */,
+				A59D447419D2DF4A00F5840E /* Foundation.framework in Frameworks */,
+				A59D447319D2DEE300F5840E /* CoreGraphics.framework in Frameworks */,
 				3F95629C18F3C87000E9DA8C /* SpriteKit.framework in Frameworks */,
+				A59D447219D2DE1500F5840E /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +234,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9562BF18F3C87000E9DA8C /* Cocoa.framework in Frameworks */,
-				3F9562BE18F3C87000E9DA8C /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +245,8 @@
 			children = (
 				3F0F81D717681C86006F5FB9 /* External */,
 				3F0F81A01768146E006F5FB9 /* TMXMapSample */,
-				3F0F81C71768146E006F5FB9 /* TMXMapSampleTests */,
 				3F9562A118F3C87000E9DA8C /* TMXMapSampleMac */,
+				3F0F81C71768146E006F5FB9 /* TMXMapSampleTests */,
 				3F9562C218F3C87000E9DA8C /* TMXMapSampleMacTests */,
 				3F0F81971768146E006F5FB9 /* Frameworks */,
 			);
@@ -278,16 +267,12 @@
 		3F0F81971768146E006F5FB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F9562EE18F3CADE00E9DA8C /* libz.dylib */,
-				3F9562D018F3C8D500E9DA8C /* Cocoa.framework */,
-				3F0F81E517681F28006F5FB9 /* libz.dylib */,
 				3F0F81981768146E006F5FB9 /* Foundation.framework */,
-				3F0F819A1768146E006F5FB9 /* CoreGraphics.framework */,
-				3F0F819C1768146E006F5FB9 /* UIKit.framework */,
+				3F0F81E517681F28006F5FB9 /* libz.dylib */,
 				3F0F819E1768146E006F5FB9 /* SpriteKit.framework */,
-				3F0F81C11768146E006F5FB9 /* XCTest.framework */,
-				3F95629A18F3C87000E9DA8C /* Cocoa.framework */,
-				3F95629D18F3C87000E9DA8C /* Other Frameworks */,
+				3F0F819A1768146E006F5FB9 /* CoreGraphics.framework */,
+				A59D447119D2DDF800F5840E /* OSX */,
+				A59D447019D2DDF300F5840E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -436,16 +421,6 @@
 			name = "tile edges";
 			sourceTree = "<group>";
 		};
-		3F95629D18F3C87000E9DA8C /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3F95629E18F3C87000E9DA8C /* AppKit.framework */,
-				3F95629F18F3C87000E9DA8C /* CoreData.framework */,
-				3F9562A018F3C87000E9DA8C /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		3F9562A118F3C87000E9DA8C /* TMXMapSampleMac */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,6 +471,23 @@
 				3FDB949E178710C700230D5C /* iso-64x64-outside.png */,
 			);
 			name = Isometric;
+			sourceTree = "<group>";
+		};
+		A59D447019D2DDF300F5840E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F819C1768146E006F5FB9 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A59D447119D2DDF800F5840E /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				A59D447B19D2E0A500F5840E /* Cocoa.framework */,
+				A59D447919D2E09C00F5840E /* AppKit.framework */,
+			);
+			name = OSX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,7 +576,7 @@
 						TestTargetID = 3F0F81941768146E006F5FB9;
 					};
 					3F9562BC18F3C87000E9DA8C = {
-						TestTargetID = 3F0F81941768146E006F5FB9;
+						TestTargetID = 3F95629818F3C87000E9DA8C;
 					};
 				};
 			};
@@ -602,8 +594,8 @@
 			projectRoot = "";
 			targets = (
 				3F0F81941768146E006F5FB9 /* TMXMapSample */,
-				3F0F81BF1768146E006F5FB9 /* TMXMapSampleTests */,
 				3F95629818F3C87000E9DA8C /* TMXMapSampleMac */,
+				3F0F81BF1768146E006F5FB9 /* TMXMapSampleTests */,
 				3F9562BC18F3C87000E9DA8C /* TMXMapSampleMacTests */,
 			);
 		};
@@ -656,7 +648,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0F81CC1768146E006F5FB9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,7 +696,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9562C718F3C87100E9DA8C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -859,7 +849,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -891,7 +882,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -985,7 +977,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "TMXMapSampleMac/TMXMapSampleMac-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
@@ -1009,7 +1001,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "TMXMapSampleMac/TMXMapSampleMac-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
@@ -1020,7 +1012,7 @@
 		3F9562CC18F3C87100E9DA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMXMapSample.app/TMXMapSample";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -1039,7 +1031,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMXMapSampleMac.app/Contents/MacOS/TMXMapSampleMac";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -1047,7 +1039,7 @@
 		3F9562CD18F3C87100E9DA8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TMXMapSample.app/TMXMapSample";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1063,7 +1055,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMXMapSampleMac.app/Contents/MacOS/TMXMapSampleMac";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
