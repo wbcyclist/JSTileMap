@@ -33,13 +33,11 @@
 		// instructions
 		SKLabelNode* label = [SKLabelNode labelNodeWithFontNamed:@"Arial"];
 		label.fontSize = 18;
-
-#if TARGET_OSX
-		label.text = @"click to change maps.";
-		label.fontColor = [NSColor yellowColor];
-#else
+		label.fontColor = [SKColor yellowColor];
+#if TARGET_OS_IPHONE
 		label.text = @"Double-tap to change maps.";
-		label.fontColor = [UIColor yellowColor];
+#else
+		label.text = @"click to change maps.";
 #endif
 		label.alpha = 0;
 		[self addChild:label];
@@ -62,7 +60,7 @@
 }
 
 
-#if TARGET_OSX
+#if !TARGET_OS_IPHONE
 
 -(void)mouseDown:(NSEvent *)theEvent {
 	/* Called when a mouse click occurs */

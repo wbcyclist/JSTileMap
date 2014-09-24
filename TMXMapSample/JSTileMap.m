@@ -254,11 +254,11 @@
   
   [aCoder encodeObject:_layerInfo forKey:@"TMXLayerLayerInfo"];
   [aCoder encodeObject:_tileInfo forKey:@"TMXLayerTileInfo"];
-#if TARGET_OSX
-    NSPoint p = {.x =  _mapTileSize.width, .y =  _mapTileSize.height};
-    [aCoder encodePoint:p forKey:@"TMXLayerTileSize"];
+#if TARGET_OS_IPHONE
+	[aCoder encodeCGSize:_mapTileSize forKey:@"TMXLayerTileSize"];
 #else
-    [aCoder encodeCGSize:_mapTileSize forKey:@"TMXLayerTileSize"];
+	NSPoint p = {.x =  _mapTileSize.width, .y =  _mapTileSize.height};
+	[aCoder encodePoint:p forKey:@"TMXLayerTileSize"];
 #endif
   [aCoder encodeObject:_map forKey:@"TMXLayerMap"];
 }
@@ -269,11 +269,11 @@
   {
     _layerInfo = [aDecoder decodeObjectForKey:@"TMXLayerLayerInfo"];
     _tileInfo = [aDecoder decodeObjectForKey:@"TMXLayerTileInfo"];
-#if TARGET_OSX
-      NSPoint p = [aDecoder decodePointForKey:@"TMXLayerTileSize"];
-      _mapTileSize = CGSizeMake(p.x, p.y);
+#if TARGET_OS_IPHONE
+	  _mapTileSize = [aDecoder decodeCGSizeForKey:@"TMXLayerTileSize"];
 #else
-      _mapTileSize = [aDecoder decodeCGSizeForKey:@"TMXLayerTileSize"];
+	  NSPoint p = [aDecoder decodePointForKey:@"TMXLayerTileSize"];
+	  _mapTileSize = CGSizeMake(p.x, p.y);
 #endif
     _map = [aDecoder decodeObjectForKey:@"TMXLayerMap"];
   }
@@ -314,11 +314,11 @@
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
   [aCoder encodeObject:_name forKey:@"TMXLayerInfoName"];
-#if TARGET_OSX
-    NSPoint p = {.x = _layerGridSize.width, .y = _layerGridSize.height};
-    [aCoder encodePoint:p forKey:@"TMXLayerInfoGridSize"];
+#if TARGET_OS_IPHONE
+	[aCoder encodeCGSize:_layerGridSize forKey:@"TMXLayerInfoGridSize"];
 #else
-    [aCoder encodeCGSize:_layerGridSize forKey:@"TMXLayerInfoGridSize"];
+	NSPoint p = {.x = _layerGridSize.width, .y = _layerGridSize.height};
+	[aCoder encodePoint:p forKey:@"TMXLayerInfoGridSize"];
 #endif
   [aCoder encodeObject:[NSData dataWithBytes:(void*)_tiles
                                       length:sizeof(int)*(_layerGridSize.width*_layerGridSize.height)]
@@ -329,10 +329,10 @@
   [aCoder encodeInteger:_maxGID forKey:@"TMXLayerInfoMaxGid"];
 
   [aCoder encodeObject:_properties forKey:@"TMXLayerInfoProperties"];
-#if TARGET_OSX
-    [aCoder encodePoint:_offset forKey:@"TMXLayerInfoOffset"];
+#if TARGET_OS_IPHONE
+	[aCoder encodeCGPoint:_offset forKey:@"TMXLayerInfoOffset"];
 #else
-    [aCoder encodeCGPoint:_offset forKey:@"TMXLayerInfoOffset"];
+	[aCoder encodePoint:_offset forKey:@"TMXLayerInfoOffset"];
 #endif
   [aCoder encodeObject:_layer forKey:@"TMXLayerInfoLayer"];
   [aCoder encodeInteger:_zOrderCount forKey:@"TMXLayerInfoZOrderCount"];
@@ -343,11 +343,11 @@
   if(self = [super init])
   {
     _name = [aDecoder decodeObjectForKey:@"TMXLayerInfoName"];
-#if TARGET_OSX
-      NSPoint p = [aDecoder decodePointForKey:@"TMXLayerInfoGridSize"];
-      _layerGridSize = CGSizeMake(p.x, p.y);
+#if TARGET_OS_IPHONE
+	  _layerGridSize = [aDecoder decodeCGSizeForKey:@"TMXLayerInfoGridSize"];
 #else
-      _layerGridSize = [aDecoder decodeCGSizeForKey:@"TMXLayerInfoGridSize"];
+	  NSPoint p = [aDecoder decodePointForKey:@"TMXLayerInfoGridSize"];
+	  _layerGridSize = CGSizeMake(p.x, p.y);
 #endif
 
     NSData* data = [aDecoder decodeObjectForKey:@"TMXLayerInfoTiles"];
@@ -363,10 +363,10 @@
     _maxGID = [aDecoder decodeIntForKey:@"TMXLayerInfoMaxGid"];
     
     _properties = [aDecoder decodeObjectForKey:@"TMXLayerInfoProperties"];
-#if TARGET_OSX
-	_offset = [aDecoder decodePointForKey:@"TMXLayerInfoOffset"];
+#if TARGET_OS_IPHONE
+	  _offset = [aDecoder decodeCGPointForKey:@"TMXLayerInfoOffset"];
 #else
-    _offset = [aDecoder decodeCGPointForKey:@"TMXLayerInfoOffset"];
+	  _offset = [aDecoder decodePointForKey:@"TMXLayerInfoOffset"];
 #endif
     _layer = [aDecoder decodeObjectForKey:@"TMXLayerInfoLayer"];
     _zOrderCount = [aDecoder decodeIntForKey:@"TMXLayerInfoZOrderCount"];
@@ -391,10 +391,10 @@
 -(void)encodeWithCoder:(NSCoder *)aCoder
 {
   [aCoder encodeObject:_groupName forKey:@"TMXObjectGroupName"];
-#if TARGET_OSX
-    [aCoder encodePoint:_positionOffset forKey:@"TMSObjectGroupPosOffset"];
+#if TARGET_OS_IPHONE
+	[aCoder encodeCGPoint:_positionOffset forKey:@"TMSObjectGroupPosOffset"];
 #else
-    [aCoder encodeCGPoint:_positionOffset forKey:@"TMSObjectGroupPosOffset"];
+	[aCoder encodePoint:_positionOffset forKey:@"TMSObjectGroupPosOffset"];
 #endif
   [aCoder encodeObject:_objects forKey:@"TMXObjectGroupObjects"];
   [aCoder encodeObject:_properties forKey:@"TMXObjectGroupProperties"];
@@ -406,10 +406,10 @@
   if(self = [super init])
   {
     _groupName = [aDecoder decodeObjectForKey:@"TMXObjectGroupName"];
-#if TARGET_OSX
-    _positionOffset = [aDecoder decodePointForKey:@"TMSObjectGroupPosOffset"];
+#if TARGET_OS_IPHONE
+	  _positionOffset = [aDecoder decodeCGPointForKey:@"TMSObjectGroupPosOffset"];
 #else
-	_positionOffset = [aDecoder decodeCGPointForKey:@"TMSObjectGroupPosOffset"];
+	  _positionOffset = [aDecoder decodePointForKey:@"TMSObjectGroupPosOffset"];
 #endif
     _objects = [aDecoder decodeObjectForKey:@"TMXObjectGroupObjects"];
     _properties = [aDecoder decodeObjectForKey:@"TMXObjectGroupProperties"];
@@ -504,10 +504,10 @@
 -(void)setSourceImage:(NSString *)sourceImage
 {
 	_sourceImage = [sourceImage copy];
-#if TARGET_OSX
-	NSImageRep* atlas = [NSImageRep imageRepWithContentsOfFile:_sourceImage];
-#else
+#if TARGET_OS_IPHONE
 	UIImage* atlas = [UIImage imageWithContentsOfFile:_sourceImage];
+#else
+	NSImageRep* atlas = [NSImageRep imageRepWithContentsOfFile:_sourceImage];
 #endif
 	_imageSize = atlas.size;
 //	_atlasTexture = [SKTexture textureWithImage:atlas];           // CML: There seems to be a bug where creating with Image instead of ImageNamed breaks the
@@ -579,17 +579,17 @@
 {
   [aCoder encodeObject:_name forKey:@"TMXTilesetName"];
   [aCoder encodeInteger:_firstGid forKey:@"TMXTilesetFirstGid"];
-#if TARGET_OSX
-    NSPoint p = {.x = _tileSize.width, .y = _tileSize.height};
-    [aCoder encodePoint:p forKey:@"TMXTilesetTileSize"];
-    p.x = _unitTileSize.width; p.y = _unitTileSize.height;
-    [aCoder encodePoint:p forKey:@"TMXTilesetUnitTileSize"];
-    p.x = _imageSize.width; p.y = _imageSize.height;
-    [aCoder encodePoint:p forKey:@"TMXTilesetImageSize"];
+#if TARGET_OS_IPHONE
+	[aCoder encodeCGSize:_tileSize forKey:@"TMXTilesetTileSize"];
+	[aCoder encodeCGSize:_unitTileSize forKey:@"TMXTilesetUnitTileSize"];
+	[aCoder encodeCGSize:_imageSize forKey:@"TMXTilesetImageSize"];
 #else
-    [aCoder encodeCGSize:_tileSize forKey:@"TMXTilesetTileSize"];
-    [aCoder encodeCGSize:_unitTileSize forKey:@"TMXTilesetUnitTileSize"];
-    [aCoder encodeCGSize:_imageSize forKey:@"TMXTilesetImageSize"];
+	NSPoint p = {.x = _tileSize.width, .y = _tileSize.height};
+	[aCoder encodePoint:p forKey:@"TMXTilesetTileSize"];
+	p.x = _unitTileSize.width; p.y = _unitTileSize.height;
+	[aCoder encodePoint:p forKey:@"TMXTilesetUnitTileSize"];
+	p.x = _imageSize.width; p.y = _imageSize.height;
+	[aCoder encodePoint:p forKey:@"TMXTilesetImageSize"];
 #endif
   [aCoder encodeInteger:_spacing forKey:@"TMXTilesetSpacing"];
   [aCoder encodeInteger:_margin forKey:@"TMXTilesetMargin"];
@@ -606,17 +606,17 @@
   {
     _name = [aDecoder decodeObjectForKey:@"TMXTilesetName"];
     _firstGid = [aDecoder decodeIntForKey:@"TMXTilesetFirstGid"];
-#if TARGET_OSX
-      NSPoint p = [aDecoder decodePointForKey:@"TMXTilesetTileSize"];
-      _tileSize = CGSizeMake(p.x, p.y);
-      p = [aDecoder decodePointForKey:@"TMXTilesetUnitTileSize"];
-      _unitTileSize = CGSizeMake(p.x, p.y);
-      p = [aDecoder decodePointForKey:@"TMXTilesetImageSize"];
-      _imageSize = CGSizeMake(p.x, p.y);
+#if TARGET_OS_IPHONE
+	  _tileSize = [aDecoder decodeCGSizeForKey:@"TMXTilesetTileSize"];
+	  _unitTileSize = [aDecoder decodeCGSizeForKey:@"TMXTilesetUnitTileSize"];
+	  _imageSize = [aDecoder decodeCGSizeForKey:@"TMXTilesetImageSize"];
 #else
-      _tileSize = [aDecoder decodeCGSizeForKey:@"TMXTilesetTileSize"];
-      _unitTileSize = [aDecoder decodeCGSizeForKey:@"TMXTilesetUnitTileSize"];
-      _imageSize = [aDecoder decodeCGSizeForKey:@"TMXTilesetImageSize"];
+	  NSPoint p = [aDecoder decodePointForKey:@"TMXTilesetTileSize"];
+	  _tileSize = CGSizeMake(p.x, p.y);
+	  p = [aDecoder decodePointForKey:@"TMXTilesetUnitTileSize"];
+	  _unitTileSize = CGSizeMake(p.x, p.y);
+	  p = [aDecoder decodePointForKey:@"TMXTilesetImageSize"];
+	  _imageSize = CGSizeMake(p.x, p.y);
 #endif
     _spacing = [aDecoder decodeIntForKey:@"TMXTilesetSpacing"];
     _margin = [aDecoder decodeIntForKey:@"TMXTilesetMargin"];
@@ -857,14 +857,14 @@
 {
   [super encodeWithCoder:aCoder];
   
-#if TARGET_OSX
-    NSPoint p = {.x = _mapSize.width, .y = _mapSize.height};
-    [aCoder encodePoint:p forKey:@"JSTileMapMapSize"];
-    p.x = _tileSize.width; p.y = _tileSize.height;
-    [aCoder encodePoint:p forKey:@"JSTileMapTileSize"];
+#if TARGET_OS_IPHONE
+	[aCoder encodeCGSize:_mapSize forKey:@"JSTileMapMapSize"];
+	[aCoder encodeCGSize:_tileSize forKey:@"JSTileMapTileSize"];
 #else
-    [aCoder encodeCGSize:_mapSize forKey:@"JSTileMapMapSize"];
-    [aCoder encodeCGSize:_tileSize forKey:@"JSTileMapTileSize"];
+	NSPoint p = {.x = _mapSize.width, .y = _mapSize.height};
+	[aCoder encodePoint:p forKey:@"JSTileMapMapSize"];
+	p.x = _tileSize.width; p.y = _tileSize.height;
+	[aCoder encodePoint:p forKey:@"JSTileMapTileSize"];
 #endif
   [aCoder encodeInt:_parentElement forKey:@"JSTileMapParentElement"];
   [aCoder encodeInteger:_parentGID forKey:@"JSTileMapParentGid"];
@@ -891,14 +891,14 @@
 {
   if(self = [super initWithCoder:aDecoder])
   {
-#if TARGET_OSX
-      NSPoint p = [aDecoder decodePointForKey:@"JSTileMapMapSize"];
-      _mapSize = CGSizeMake(p.x, p.y);
-      p = [aDecoder decodePointForKey:@"JSTileMapTileSize"];
-      _tileSize = CGSizeMake(p.x, p.y);
+#if TARGET_OS_IPHONE
+	  _mapSize = [aDecoder decodeCGSizeForKey:@"JSTileMapMapSize"];
+	  _tileSize = [aDecoder decodeCGSizeForKey:@"JSTileMapTileSize"];
 #else
-      _mapSize = [aDecoder decodeCGSizeForKey:@"JSTileMapMapSize"];
-      _tileSize = [aDecoder decodeCGSizeForKey:@"JSTileMapTileSize"];
+	  NSPoint p = [aDecoder decodePointForKey:@"JSTileMapMapSize"];
+	  _mapSize = CGSizeMake(p.x, p.y);
+	  p = [aDecoder decodePointForKey:@"JSTileMapTileSize"];
+	  _tileSize = CGSizeMake(p.x, p.y);
 #endif
     _parentElement = [aDecoder decodeIntForKey:@"JSTileMapParentElement"];
     _parentGID = [aDecoder decodeIntForKey:@"JSTileMapParentGid"];
