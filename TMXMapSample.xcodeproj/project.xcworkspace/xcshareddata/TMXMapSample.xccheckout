@@ -10,29 +10,29 @@
 	<string>TMXMapSample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</key>
-		<string>https://github.com/slycrel/JSTileMap.git</string>
+		<key>3CA280F18424BF8F39D99114644FA879EE23F023</key>
+		<string>https://github.com/wbcyclist/JSTileMap.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TMXMapSample.xcodeproj/project.xcworkspace</string>
+	<string>TMXMapSample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</key>
+		<key>3CA280F18424BF8F39D99114644FA879EE23F023</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/slycrel/JSTileMap.git</string>
+	<string>https://github.com/wbcyclist/JSTileMap.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</string>
+	<string>3CA280F18424BF8F39D99114644FA879EE23F023</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>136B3A6D-DE5C-4DDF-B841-F8E3E17753E1</string>
+			<string>3CA280F18424BF8F39D99114644FA879EE23F023</string>
 			<key>IDESourceControlWCCName</key>
 			<string>JSTileMap</string>
 		</dict>
